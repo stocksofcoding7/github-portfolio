@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio /Smriti Mishra</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="assets/SMlogo.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+<div class="fixed right-6 top-1/2 transform -translate-y-1/2 h-64 w-1.5 bg-gray-700 rounded-full z-50 hidden sm:block">
+  <div id="scroll-indicator" class="bg-[#1DCD9F] h-0 w-full rounded-full transition-all duration-300 ease-out shadow-md shadow-[#1DCD9F]"></div>
+</div>
+    <!-- Loading Animation -->
+<div id="loading">
+  <div class="loading-text" id="name-loader">
+    <span data-text="S">S</span>
+    <span data-text="M">M</span>
+    <span data-text="R">R</span>
+    <span data-text="I">I</span>
+    <span data-text="T">T</span>
+    <span data-text="I">I</span>
+
+  </div>
+</div>
+
+    <!-- Hero Section -->
+<section class="position-relative container-fluid min-vh-100 d-flex justify-content-center align-items-center text-white overflow-hidden" style="background-color: #000000">
+  <!-- Hero Particle Background -->
+  <div id="particles-hero" class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0"></div>
+
+  <!-- Hero Content -->
+  <div class="container text-center position-relative" style="z-index: 1">
+    <h1 class="display-4 fw-bold">
+      <span class="text-white me-2">Hi, I'm</span>
+      <button class="button" data-text="Smriti">
+        <span class="actual-text">&nbsp;Smriti&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Smriti&nbsp;</span>
+      </button>
+    </h1>
+    <p class="lead text-light mt-3">
+      Curious mind diving into web development, ML, and coding fundamentals.
+
+.
+    </p>
+    <a href="#projects" class="shadow__btn mt-4">View Projects</a>
+  </div>
+</section>
+
+    <!-- About Me Section -->
+<section id="about" class="bg-black text-white py-20 px-6">
+  <div
+    class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 px-4"
+  >
+    <!-- Profile Image -->
+    <div
+      class="flex-shrink-0 w-64 h-64 rounded-xl overflow-hidden shadow-lg grayscale hover:grayscale-0 transition duration-500"
+      id="about-img"
+    >
+      <img
+        src="assets/smriti portfolio pho.jpg"
+        alt="Smriti Mishra"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- Text Content -->
+    <div class="max-w-2xl" id="about-text">
+      <h2 class="text-3xl md:text-4xl font-semibold leading-snug mb-4">
+        I’m <span class="text-[#1DCD9F] font-bold">Smriti Mishra</span>, a
+Curious mind diving into web development, ML, and coding fundamentals.
+
+      </h2>
+
+     <p class="text-gray-300 text-lg leading-relaxed mb-6">
+  I'm a B.Tech student in Electronics and Communication Engineering at 
+  Dr. B R Ambedkar National Institute of Technology, Jalandhar, 
+  with core interests in Machine Learning, Web Development, and DSA. 
+  I enjoy building smart digital solutions by blending logic with modern technologies.
+</p>
+
+<<p class="text-gray-300 text-lg leading-relaxed mb-6">
+  I am currently pursuing my B.Tech in Electronics and Communication Engineering 
+  from Dr. B R Ambedkar National Institute of Technology, Jalandhar. 
+  My interests include <span class="text-[#1DCD9F] font-bold">Machine Learning</span>, 
+  <span class="text-[#1DCD9F] font-bold">Web Development</span>, and 
+  <span class="text-[#1DCD9F] font-bold">Data Structures & Algorithms</span>. 
+  I’ve built projects like a <span class="text-[#1DCD9F] font-bold">responsive pizza website</span> (Cheese Oven), 
+  a <span class="text-[#1DCD9F] font-bold">Tic Tac Toe game</span>, and my 
+  <span class="text-[#1DCD9F] font-bold">portfolio site</span>. 
+  I’m currently exploring tools like 
+  <span class="text-[#1DCD9F] font-bold">React.js</span>, 
+  <span class="text-[#1DCD9F] font-bold">MongoDB</span>, and 
+  <span class="text-[#1DCD9F] font-bold">RESTful APIs</span> to deepen my skills.
+</p>
+
+
+
+      <!-- Social Icons -->
+      <div class="flex space-x-5 mt-6 align-items-center justify-content-center md:justify-start">
+        <a
+          href="https://www.instagram.com/smriti8193/"
+          target="_blank"
+          class="text-[#e1306c] text-2xl hover:text-[#ff6090] transition"
+        >
+          <img src="./assets/instagram-logo.png" class="w-6 h-6" alt="instagram-logo">
+        </a>
+        <a
+          href="https://www.linkedin.com/in/smriti-mishra-7036a4288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+          class="text-[#0a66c2] text-2xl hover:text-[#339af0] transition"
+        >
+          <img src="./assets/linkedin-logo.png"  class="w-6 h-6" alt="linkedin-logo">
+        </a>
+        <a
+          href="mailto:smritim.ec@22nitj.ac.in"
+          class="text-white text-2xl hover:text-gray-400 transition"
+        >
+          <img src="./assets/mail-logo.png" class="w-6 h-6" alt="mail-logo">
+        </a>
+        <a
+          href="https://github.com/stocksofcoding7"
+          target="_blank"
+          class="text-white text-2xl hover:text-gray-400 transition"
+        >
+          <img src="./assets/github-logo.png" class="w-6 h-6" alt="github-logo">
+        </a>
+      </div>
+
+      <!-- Download Resume Button -->
+      <div class="flex align-items-center justify-content-center mt-8">
+        <a
+          href="assets/smriti.pdf"
+          download
+        >
+          <button class="dbutton" type="dbutton">
+            <span class="dbutton__text">Download</span>
+            <span class="dbutton__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- JOURNEY SECTION -->
+<section id="journey" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold mb-16 text-center text-[#1DCD9F]">My Journey</h2>
+    
+    <div class="relative">
+      <!-- Vertical Line -->
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#1DCD9F]"></div>
+
+      <!-- Timeline Card 1 - Left -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-start">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2 md:pr-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">Internship at @A2IT</h3>
+            <span class="text-sm text-gray-400">June 2025 - Present</span>
+            <p class="mt-2 text-gray-300">Currently working as a Machine Learning Intern focused on data preprocessing, model training, and performance evaluation in applied ML tasks.</p>
+          </div>
+        </div>
+        <div class="md:w-1/2"></div>
+      </div>
+
+      <!-- Timeline Card 2 - Right -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-end">
+  <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+  <div class="md:w-1/2"></div>
+  <div class="md:w-1/2 md:pl-10">
+    <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+      <h3 class="text-xl font-semibold text-[#1DCD9F]">B.Tech – Electronics and Communication Engineering</h3>
+      <span class="text-sm text-gray-400">Dr. B R Ambedkar National Institute of Technology, Jalandhar (2022 - 2026)</span>
+      <p class="mt-2 text-gray-300">Focused on machine learning, web development, and core concepts in electronics and algorithms.</p>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Timeline Card 3 - Left -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-start">
+  <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+  <div class="md:w-1/2 md:pr-10">
+    <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+      <h3 class="text-xl font-semibold text-[#1DCD9F]">Senior Secondary – PCM</h3>
+      <span class="text-sm text-gray-400">Arya Kanya Pathshala Inter College, Shahjahanpur, UP (2021)</span>
+      <p class="mt-2 text-gray-300">
+   Completed high school with PCM, where I built a strong foundation in analytical thinking, which later led me to explore coding and technology in college.
+
+</p>
+
+    </div>
+  </div>
+  <div class="md:w-1/2"></div>
+</div>
+
+</section>
+
+<!-- AOS CSS (in <head>) -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<!-- TECH STACK SECTION -->
+<section id="tech-stack" class="bg-black text-white py-20 px-6 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto flex flex-col gap-20">
+
+    <!-- LANGUAGES -->
+    <div class="flex flex-col gap-8" data-aos="fade-up">
+      <div class="text-gray-400 text-lg font-bold uppercase">Languages</div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="w-6 h-6"><span>C</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-6 h-6"><span>C++</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-6 h-6"><span>HTML</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-6 h-6"><span>CSS</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6"><span>JavaScript</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-6 h-6"><span>Python</span></div>
+      </div>
+    </div>
+
+    <!-- DEVELOPER TOOLS -->
+    <<!-- DEVELOPER TOOLS -->
+<div class="flex flex-col gap-8" data-aos="fade-up">
+  <div class="text-gray-400 text-lg font-bold uppercase">Developer Tools</div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+    <div class="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="w-6 h-6">
+      <span>VS Code</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" class="w-6 h-6">
+      <span>MATLAB</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/AMD_Vivado_logo.svg/831px-AMD_Vivado_logo.svg.png" class="w-6 h-6" alt="Vivado Logo">
+<span>Vivado</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-6 h-6">
+      <span>Git</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-6 h-6">
+      <span>GitHub</span>
+    </div>
+  </div>
+</div>
+
+
+    <div class="flex flex-col gap-8" data-aos="fade-up">
+  <div class="text-gray-400 text-lg font-bold uppercase">Frameworks / Tools</div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+    <div class="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-6 h-6">
+      <span>React.js</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-6 h-6">
+      <span>Node.js</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <img src="https://jwt.io/img/pic_logo.svg" class="w-6 h-6">
+      <span>JWT Authentication</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048944.png" class="w-6 h-6">
+      <span>RESTful APIs</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="w-6 h-6">
+      <span>Figma</span>
+    </div>
+  </div>
+</div>
+
+
+    <!-- CLOUD / DATABASES -->
+    <div class="flex flex-col gap-8" data-aos="fade-up">
+      <div class="text-gray-400 text-lg font-bold uppercase">Cloud / Databases</div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-6 h-6"><span>MongoDB</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-6 h-6"><span>MySQL</span></div>
+      </div>
+    </div>
+
+    <!-- MACHINE LEARNING -->
+    <div class="flex flex-col gap-8" data-aos="fade-up">
+      <div class="text-gray-400 text-lg font-bold uppercase">Machine Learning</div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div class="flex items-center gap-2"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" class="w-6 h-6"><span>Scikit-learn</span></div>
+        <div class="flex items-center gap-2"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" class="w-6 h-6"><span>TensorFlow</span></div>
+        <div class="flex items-center gap-2"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" class="w-6 h-6"><span>Pandas</span></div>
+        <div class="flex items-center gap-2"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" class="w-6 h-6"><span>Jupyter</span></div>
+      </div>
+    </div>
+
+    <!-- DSA -->
+    <div class="flex flex-col gap-8" data-aos="fade-up">
+      <div class="text-gray-400 text-lg font-bold uppercase">DSA</div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-6 h-6"><span>C++</span></div>
+        <div class="flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" class="w-6 h-6"><span>Recursion & DP</span></div>
+        <div class="flex items-center gap-2"><img src="https://i.ibb.co/6HRcwG7/time-complexity.png" class="w-6 h-6" alt="Time & Space Complexity"><span class="text-lg">Time & Space Complexity</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- AOS JS (before </body>) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="relative bg-black text-white py-20 px-6 overflow-hidden">
+
+  <!-- PARTICLES BACKGROUND -->
+  <div id="particles-projects" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
+  <!-- ACTUAL PROJECT CONTENT -->
+  <div class="relative z-10">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Projects</h2>
+      <p class="text-gray-300 text-lg">Some of the things I've built.</p>
+    </div>
+
+    <!-- PROJECT CARDS -->
+    <div class="flex flex-col gap-10 max-w-6xl mx-auto">
+
+      <!-- The Cheese Box -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="assets/CHEESE1.png" alt="The Cheese Box Poster" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">The Cheese Box</h3>
+          <p class="text-gray-700 mb-4">
+            A visually engaging landing page for a fictional pizza restaurant, featuring a dynamic cart system, responsive design, and smooth single-page navigation.
+          </p>
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/html5/html5-original.svg" class="w-4 h-4" /> HTML
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/css3/css3-original.svg" class="w-4 h-4" /> CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.14.0/icons/javascript/javascript-original.svg" class="w-4 h-4" /> JavaScript
+            </span>
+          </div>
+          <div class="flex gap-4">
+            <a href="https://github.com/stocksofcoding7/TheCheeseBox" target="_blank" class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/stocksofcoding7/TheCheeseBox" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Portfolio Website -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/port ss.png" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="text-gray-700 mb-4">
+            My portfolio website featuring my projects, skills, and journey. Built with HTML, CSS, and JavaScript for a modern, interactive experience.
+          </p>
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="w-4 h-4" /> HTML
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-4 h-4" /> Tailwindcss
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-4 h-4" /> JavaScript
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-4 h-4" /> CSS
+            </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+              <img src="./assets/framer-logo.png" class="w-4 h-4" /> Framer Motion
+            </span>
+          </div>
+          <div class="flex gap-4">
+            <a href="" target="_blank" class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TicTacToe -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="assets/game.png" alt="Boost AI Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">AI TicTacToe</h3>
+          <p class="text-gray-700 mb-4">
+            An interactive Tic Tac Toe game featuring AI opponent logic using the Minimax algorithm, with theme toggle (light/dark mode) and responsive design for seamless user experience.
+          </p>
+          <div class="flex flex-wrap gap-3 mb-4">
+  <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-4 h-4" /> HTML
+  </span>
+  <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-4 h-4" /> CSS
+  </span>
+  <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-4 h-4" /> JavaScript
+  </span>
+  <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+    <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" class="w-4 h-4" /> Minimax (DSA)
+  </span>
+  <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828774.png" class="w-4 h-4" /> Dark/Light Mode
+  </span>
+</div>
+
+          <div class="flex gap-4">
+            <a href="https://github.com/stocksofcoding7/DSAbaesdTICTACTOE" target="_blank" class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/stocksofcoding7/DSAbaesdTICTACTOE" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- end of cards wrapper -->
+  </div> <!-- end of z-10 -->
+</section>
+
+<!-- UPCOMING PROJECTS SECTION -->
+<section id="upcoming-projects" class="relative bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-3xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">Upcoming Projects</h2>
+    <p class="text-gray-400 text-lg">Some exciting ideas I'm currently working on.</p>
+  </div>
+
+  <div class="flex justify-center">
+    <!-- CARD: Pinterest Clone -->
+    <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6 max-w-md w-full">
+      <h3 class="text-xl font-semibold mb-2">Pinterest Clone</h3>
+      <p class="text-gray-700 text-base mb-4">
+        An image-sharing platform inspired by Pinterest, featuring a masonry-style image grid, responsive design, and interactive pin cards built using React and Tailwind CSS.
+      </p>
+      <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="bg-black text-white py-20 px-6 flex items-center justify-center">
+  <div class="w-full max-w-4xl text-center flex flex-col items-center gap-6">
+    <p class="text-white-400 text-lg">Let's connect and build something amazing!</p>
+
+    <!-- Email Link -->
+    <a href="mailto:smritim.ec@22nitj.ac.in" class="hover:text-gray-400 transition">
+      <h2 class="text-4xl font-bold mb-2">smritim.ec@22nitj.ac.in</h2>
+    </a>
+
+    <!-- GitHub Star Button -->
+    <button
+      class="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white shadow hover:bg-black/90 h-9 px-4 py-2 max-w-52 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-black hover:ring-offset-2"
+    >
+      <span class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40"></span>
+      <div class="flex items-center">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 438.549 438.549">...</svg>
+        <span class="ml-1 text-white">Star on GitHub</span>
+      </div>
+      <div class="ml-2 flex items-center gap-1 text-sm md:flex">
+        <svg class="w-4 h-4 text-gray-500 transition-all duration-300 group-hover:text-yellow-300" fill="currentColor" viewBox="0 0 24 24">...</svg>
+        <span class="inline-block tabular-nums tracking-wider font-display font-medium text-white">
+          <a href="https://github.com/stocksofcoding7">4</a>
+        </span>
+      </div>
+    </button>
+  </div>
+</section>
+
+<!-- Floating Mail Link -->
+<a
+  href="mailto:smritim.ec@22nitj.ac.in?subject=Let's Connect&body=Hi Smriti,%0D%0A%0D%0AI wanted to get in touch with you..."
+  class="fixed-email"
+  title="Mail Me"
+>
+  smritim.ec@22nitj.ac.in
+</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@motionone/dom/dist/motion.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/motion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ParticleJs -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="script.js"></script>
+    </script>
+  </body>
+</html>
